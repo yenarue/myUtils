@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import HelloWorld from '@/components/HelloWorld'
+import IndentControl from '@/components/IndentControl'
 
 describe('IndentControl.vue', () => {
   it('아직 아무런 테스트가 없다', () => {
