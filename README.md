@@ -1,8 +1,11 @@
-# my-utils
+# [my-utils](https://yenarue-utils.herokuapp.com/)
 
 > yenarue's website to collect utils
 * 웹 프로그래밍 연습겸, 특정 기능이 필요할 때 마다 직접 만드려고 합니다.
-* 추후 호스팅 연결할 예정........
+
+## Details
+* CircleCI : https://circleci.com/gh/yenarue/myUtils
+* Heroku : https://dashboard.heroku.com/apps/yenarue-utils
 
 ## Build Setup
 
