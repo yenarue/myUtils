@@ -2,6 +2,7 @@
 
 > yenarue's website to collect utils
 * 웹 프로그래밍 연습겸, 특정 기능이 필요할 때 마다 직접 만드려고 합니다.
+* CSS 연습도 할 겸 디자인도 입히고 싶은데 디자인 감각이 없어서 고민중입니다.
 
 ## Details
 * CircleCI : https://circleci.com/gh/yenarue/myUtils
