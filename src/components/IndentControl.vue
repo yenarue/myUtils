@@ -18,7 +18,7 @@ export default {
   data () {
     return {
       whiteSpaceCount: 4,
-      code: ''
+      code: '',
     }
   },
   methods: {
@@ -34,8 +34,8 @@ export default {
       }
       const codeLines = this.code.split('\n')
       this.code = codeLines.map(line => whiteSpaces + line).join('\n')
-    }
-  }
+    },
+  },
 }
 </script>
 
