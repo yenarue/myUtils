@@ -1,40 +1,42 @@
 <template>
   <div class="IndentControl">
     <h1>indent 조절하기</h1>
-    white-space 갯수 : <input v-model="whiteSpaceCount"/>
-    <br/><br/>
-    <textarea class="code-editor" v-model="code"></textarea>
-    <br/>
-    <button v-on:click="removeIndent">&#60;&#60;</button>
-    <button v-on:click="addIndent">&#62;&#62;</button>
+    white-space 갯수 : <input v-model="whiteSpaceCount">
+    <br><br>
+    <textarea
+      v-model="code"
+      class="code-editor" />
+    <br>
+    <button @click="removeIndent">&#60;&#60;</button>
+    <button @click="addIndent">&#62;&#62;</button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'IndentControl',
-  data() {
+  data () {
     return {
       whiteSpaceCount: 4,
-      code: '',
-    };
+      code: ''
+    }
   },
   methods: {
-    removeIndent() {
-      const regex = new RegExp(`[ ]{${this.whiteSpaceCount}}`);
-      const codeLines = this.code.split('\n');
-      this.code = codeLines.map(line => line.replace(regex, '')).join('\n');
+    removeIndent () {
+      const regex = new RegExp(`[ ]{${this.whiteSpaceCount}}`)
+      const codeLines = this.code.split('\n')
+      this.code = codeLines.map(line => line.replace(regex, '')).join('\n')
     },
-    addIndent() {
-      let whiteSpaces = '';
+    addIndent () {
+      let whiteSpaces = ''
       for (let i = 0; i < this.whiteSpaceCount; i += 1) {
-        whiteSpaces += ' ';
+        whiteSpaces += ' '
       }
-      const codeLines = this.code.split('\n');
-      this.code = codeLines.map(line => whiteSpaces + line).join('\n');
-    },
-  },
-};
+      const codeLines = this.code.split('\n')
+      this.code = codeLines.map(line => whiteSpaces + line).join('\n')
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
