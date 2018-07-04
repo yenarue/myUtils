@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import IndentControl from '../components/IndentControl.vue'
 import Main from '../components/Main.vue'
+import Building from '../components/Building.vue'
 
 Vue.use(Router)
 
@@ -12,6 +13,11 @@ export default new Router({
       path: '/',
       name: 'Main',
       component: Main,
+    }, {
+      path: '/warn_building',
+      name: 'Building',
+      component: Building,
+      props: true,
     }, {
       path: '/indent_control',
       name: 'IndentControl',
