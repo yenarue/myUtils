@@ -1,6 +1,12 @@
 <template>
   <div class="IndentControl">
-    <h1>indent 조절하기</h1>
+    <h1>공백제거기</h1>
+    <p>쓸모없는 공백따위 사라져버렷!</p>
+    <p>
+      블로그로 코드 옮길때마다 거슬리던 Indent의 흔적들....
+      <br>이 시간부로 공백은 내가 제어한다!
+      <br>원클릭으로 쉽고 간단한 제어!
+    </p>
     white-space 갯수 : <input v-model="whiteSpaceCount">
     <br><br>
     <textarea
@@ -41,9 +47,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
 a {
   color: #42b983;
 }
