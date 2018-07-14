@@ -32,6 +32,14 @@ module.exports = {
       "imports": "always-multiline",
       "exports": "always-multiline",
       "functions": "ignore"
-    }]
+    }],
+
+    "vue/max-attributes-per-line": [2, {
+      "singleline": 1,
+      "multiline": {
+        "max": 1,
+        "allowFirstLine": true
+      }
+    }],
   }
 }
