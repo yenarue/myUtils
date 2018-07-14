@@ -37,7 +37,8 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: white;
+  text-decoration: none;
 }
 
 .navbar {

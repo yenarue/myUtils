@@ -4,7 +4,7 @@ import Vue from 'vue'
 import Buefy from 'buefy'
 import App from './App.vue'
 import router from './router'
-// import 'buefy/lib/buefy.css'
+import 'buefy/lib/buefy.css'
 
 Vue.config.productionTip = false
 

@@ -1,9 +1,12 @@
 <template>
   <div class="Main">
     <p>아무거나 <b>만듭니다</b></p>
-    <button @click="moveToIndentControl">공백제거기</button>
-    <button @click="moveToBuilding($event)">세줄일기</button>
-    <button @click="moveToBuilding">서재관리</button>
+    <button class="button"
+            @click="moveToIndentControl">공백제거기</button>
+    <button class="button"
+            @click="moveToBuilding($event)">세줄일기</button>
+    <button class="button"
+            @click="moveToBuilding">서재관리</button>
   </div>
 </template>
 
