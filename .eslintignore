@@ -2,3 +2,5 @@ build/*.js
 config/*.js
 test/**/*.js
 .circleci/
+lib/
+dist/

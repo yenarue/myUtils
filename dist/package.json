@@ -1,0 +1,10 @@
+{
+  "name": "Yenarue's Utils",
+  "version": "0.0.0",
+  "description": "A Vue.js project",
+  "author": "Yena Kim <yenarue@gmail.com>",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install express"
+  }
+}
