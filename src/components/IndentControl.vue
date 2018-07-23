@@ -1,20 +1,47 @@
 <template>
-  <div class="IndentControl">
-    <h1>공백제거기</h1>
-    <p>쓸모없는 공백따위 사라져버렷!</p>
-    <p>
-      블로그로 코드 옮길때마다 거슬리던 Indent의 흔적들....
+  <div class="IndentControl container">
+    <section class="section">
+      <div class="container">
+        <h1 class="title">공백제거기</h1>
+        <h2 class="subtitle">
+          쓸모없는 공백따위 사라져버렷!
+        </h2>
+      </div>
+    </section>
+    <div class="container notification">
+      블로그로 코드 옮길때마다 귀찮게 없애줘야했던 <strong>공백의 향연들...</strong>
       <br>이 시간부로 공백은 내가 제어한다!
       <br>원클릭으로 쉽고 간단한 제어!
-    </p>
-    white-space 갯수 : <input v-model="whiteSpaceCount">
-    <br><br>
-    <textarea
-      v-model="code"
-      class="code-editor" />
-    <br>
-    <button @click="removeIndent">&#60;&#60;</button>
-    <button @click="addIndent">&#62;&#62;</button>
+    </div>
+    <div class="section content primary">
+      <textarea class="textarea code-editor"
+                placeholder="코드를 넣어주세요"
+                rows="15"
+                v-model="code"/>
+      <div class="columns has-background-light is-mobile">
+        <div class="column">
+          <input class="input width-100-percentage"
+                 type="number"
+                 placeholder="처리할 공백의 개수를 넣어주세요 (ex: 4)"
+                 v-model="whiteSpaceCount">
+        </div>
+        <div class="column">
+          <button class="button width-100-percentage is-dark"
+                  @click="removeIndent">&#60;&#60;
+          </button>
+        </div>
+        <div class="column">
+          <button class="button width-100-percentage is-dark"
+                  @click="addIndent">&#62;&#62;
+          </button>
+        </div>
+        <div class="column">
+          <button class="button width-100-percentage is-warning"
+                  @click="copyToClipboard">복사
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -41,6 +68,7 @@ export default {
       const codeLines = this.code.split('\n')
       this.code = codeLines.map(line => whiteSpaces + line).join('\n')
     },
+    copyToClipboard () { },
   },
 }
 </script>
@@ -49,10 +77,5 @@ export default {
 <style scoped>
 a {
   color: #42b983;
-}
-
-.code-editor {
-  width: 100%;
-  height: 300px;
 }
 </style>

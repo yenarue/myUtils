@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar"
+  <nav class="navbar is-dark"
        role="navigation"
        aria-label="main navigation">
     <div class="navbar-brand nav-height">
@@ -43,7 +43,6 @@ a:hover {
 
 .navbar {
   width: 100%;
-  background-color: lightgray;
   border: 0;
 }
 
