@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import IndentControl from '../components/IndentControl.vue'
 import Main from '../components/Main.vue'
 import Building from '../components/Building.vue'
+import IndentControl from '../components/IndentControl.vue'
+import GunTae from '../components/GunTae.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,10 @@ export default new Router({
       path: '/indent_control',
       name: 'IndentControl',
       component: IndentControl,
+    }, {
+      path: '/guntae',
+      name: 'GunTae',
+      component: GunTae,
     }
   ],
 })

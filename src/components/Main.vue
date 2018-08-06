@@ -7,6 +7,8 @@
             @click="moveToBuilding($event)">세줄일기</button>
     <button class="button"
             @click="moveToBuilding">서재관리</button>
+    <button class="button"
+            @click="moveToGuntae">근태관리</button>
   </div>
 </template>
 
@@ -14,6 +16,11 @@
 export default {
   name: 'Main',
   methods: {
+    moveToGuntae () {
+      this.$router.push({
+        name: 'GunTae',
+      })
+    },
     moveToIndentControl () {
       this.$router.push({
         name: 'IndentControl',
