@@ -8,6 +8,7 @@
         </h2>
       </div>
     </section>
+    <workStatusCheck/>
     <h1 class="title notification">근태 달력</h1>
     <div class="section content primary">
       <b-datepicker inline
@@ -42,8 +43,13 @@
 </template>
 
 <script>
+import WorkStatusCheck from './guntae/WorkStatusCheck'
+
 export default {
   name: 'IndentControl',
+  components: {
+    workStatusCheck: WorkStatusCheck,
+  },
   data () {
     return {
       detail: [],
